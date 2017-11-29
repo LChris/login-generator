@@ -41,4 +41,10 @@ public class LoginGeneratorTest {
         assertThat(test, is("JROL1"));
     }
 
+    @Test
+    public void loginPDU() throws Exception {
+        String test = loginGenerator.generateLoginForNomAndPrenom("Du", "Paul");
+        assertThat(test, is("PDU"));
+    }
+
 }
